@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #0d6efd;
+  --dark-bg: #121212;
+  --card-bg: #ffffff;
+}
+
+body {
+  font-family: 'Outfit', 'Inter', -apple-system, sans-serif;
+  background-color: #f8f9fa;
+  color: #2d3436;
+}
+
+.hero-section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-dark-promo {
+  background: linear-gradient(45deg, #1a1a1a, #2c3e50);
+  width: 100%;
+}
+
+.movie-card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px !important;
+  overflow: hidden;
+  height: 100%;
+}
+
+.movie-card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+  .display-3 {
+    font-size: 2.5rem !important;
+  }
+
+  .display-4 {
+    font-size: 2.2rem !important;
+  }
+
+  .hero-section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+  }
+}
+
+.main-nav {
+  z-index: 1050 !important;
+}
+
+.main-nav .navbar-collapse {
+  background: inherit;
+  padding: 1rem 0;
+}
+
+@media (max-width: 991.98px) {
+  .main-nav .navbar-collapse {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 0.5rem;
+  }
+
+  .nav-search-form .input-group {
+    width: 100%;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.navbar-brand {
+  letter-spacing: -1px;
+}
+
+.nav-link.active {
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+/* Custom scrollbar for genre list */
+.overflow-auto::-webkit-scrollbar {
+  height: 4px;
+}
+
+.overflow-auto::-webkit-scrollbar-thumb {
+  background: #dee2e6;
+  border-radius: 10px;
+}
+
+.rounded-4 {
+  border-radius: 1.5rem !important;
+}
